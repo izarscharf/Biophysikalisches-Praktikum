@@ -19,4 +19,8 @@ please make the effort to write nice code.
 
 # Group Task Distribution:  
 
+As we can see in the task dist. by the end of week one we should have assembled the entirety  
+of the required materials for all experiments, leaving the latter weeks to reformulation and  
+finetuning and expansion on previous reports and presentations and analyses.
+
 ![Group_Task_Table](https://user-images.githubusercontent.com/82641497/142510128-af93ed04-10b5-4ad2-94fe-d8def03681a5.png)
