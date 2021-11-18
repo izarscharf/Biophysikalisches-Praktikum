@@ -12,9 +12,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 The Githubrepo should stay clean and tidy.  
-1.All files will be named in the same scheme:   
-  + **GruppeX_abreviation**   
-  + **"Gruppe6_PRT.docx"**  
+All files will be named in the same scheme:   
+  **GruppeX_abreviation**   
+   **"Gruppe6_PRT.docx"**  
 
 Since the data for all of the experiments will likely be the same for everyone  
 it would be great to include the Data defined as a reasonably named variable or  
@@ -25,7 +25,6 @@ Since we all want to benefit from the sharing,
 please make the effort to write nice code.  
 
 # Group Task Distribution:  
-
 ```{r, echo=FALSE, out.width="75%", out.height="75%"}
 knitr::include_graphics("C:/Users/Izar Schärf/Desktop/MoBi/Semester_7/BPC-Praktikum/Githubrepo/Group_Task_Table.png")
 ```
