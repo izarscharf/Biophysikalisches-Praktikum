@@ -4,7 +4,8 @@ BPC-P Git-Repo README
 ------------------------------------------------------------------------------
 
 
-The Githubrepo should stay **clean** and **tidy**.
+The Githubrepo should stay **clean** and **tidy**. As you can see each group has a folder to store their files in.  
+
 All files will be named in the same scheme: 
   + **GruppeX_abreviation** 
   + **"Gruppe6_PRT.docx"**
