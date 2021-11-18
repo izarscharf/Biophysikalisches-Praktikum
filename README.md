@@ -19,6 +19,4 @@ please make the effort to write nice code.
 
 # Group Task Distribution:  
 
-![]("C:/Users/Izar Schärf/Desktop/MoBi/Semester_7/BPC-Praktikum/Githubrepo/Group_Task_Table.png"){width = 50% , height = 50% }
-
-
+![Group_Task_Table](https://user-images.githubusercontent.com/82641497/142510128-af93ed04-10b5-4ad2-94fe-d8def03681a5.png)
