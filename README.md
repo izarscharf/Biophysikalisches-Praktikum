@@ -18,6 +18,11 @@ code is a must for sharing it with others.
 Since we all want to benefit from the sharing,  
 please make the effort to write nice code.  
 
+
+**Please do not push too often, finish your work inside your group and only then push it to the repo**    
+**you can all imagine the chaos of 60 people pushing and pulling all week long.**     
+**This is not supposed to be a git for cooperation but for sharing only.**  
+
 # Group Task Distribution:  
 
 As we can see in the task dist. by the end of week one we should have assembled the entirety  
