@@ -33,11 +33,12 @@ finetuning and expansion on previous reports and presentations and analyses.
 
 # Upload files as follows:
 ![image](https://user-images.githubusercontent.com/82641497/143777868-313b8369-a068-4b60-b44c-302fb75e879c.png)
-After uploading comit changes for upload to take effect
+ **After uploading commit changes for upload to take effect**
 ![image](https://user-images.githubusercontent.com/82641497/143777897-02f11150-9d55-4403-9a11-99fafa68baaf.png)
 
  **OR drop files into local repo when using GitHub-Desktop**
  ![image](https://user-images.githubusercontent.com/82641497/143777994-0c8d8d5c-2778-4cc9-92a2-16d99760dc81.png)
+ **then commit changes via GitHub-Desktop**
 
  
  
