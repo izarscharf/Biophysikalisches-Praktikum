@@ -5,10 +5,7 @@ date: "30/11/2021"
 output: word_document
 ---
 
-
-
-"To do:
---Write Discussion
+#loading packages and Data 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(readxl)
@@ -16,19 +13,23 @@ library(ggplot2)
 library(knitr)
 library(tidyverse)
 library("writexl")
+
+#loading Data from Excel sheet for experiment 1 and 2
 Exp<-read_excel("C:/Users/Izar Schärf/Desktop/MoBi/Semester_7/BPC-Praktikum/Actin versuch data/_BPC Praktikum Werte.xlsx")
-#defining the dataframes
+#defining the dataframes of Exp 1 and 2
 Exp1 <- Exp[2:17,1:4]
 colnames(Exp1) = as.data.frame(Exp[1,1:4])
 
 Exp2 <- Exp[2:9,6:9]
 colnames(Exp2) = as.data.frame(Exp[1,6:9])
+
+#Loading what ever the fuck the data for experiment 3 is formatted as, will be converted later on 
+Exp3_rotz <- read.csv("C:/Users/Izar Schärf/Desktop/MoBi/Semester_7/BPC-Praktikum/Actin versuch data/SPEXGruppe 6.td")
+
 ```
 
 ## Results Experiment 1
-The first Experiment measured the viscosity of the actin solution  with the metal ball method, the time it takes the metal ball to move through the medium allows us to calculate the viscosity. This measurement was performed across samples which had different times for the actin to polymerize. The end result is a polymerization time to viscosity graph. 
-The desity of the material was determined by measuring the absorbtion at 290 nm with an optical path length of 1 cm and a absorbtivity of  0.63 ±0.01 ml mg^-1
-cm^-1, this yielded a absorbtion of 0.562 . 
+The first Experiment measured the viscosity of the actin solution  with the metal ball method, the time it takes the metal ball to move through the medium allows us to calculate the viscosity. This measurement was performed across samples which had different times for the actin to polymerize. The end result is a polymerization time to viscosity graph.
 
 ```{r, echo = FALSE}
 #viscosity:
@@ -103,13 +104,6 @@ visc_plot1 <-ggplot(visc_plot_data, aes(x = Zeit, y = visc))+
   geom_point()+
               labs(title = "Rolling ball experiment 1", x = "time to set [min]", y = "viscosity [Kg/(m*s)]")
 
-
-
-#kable(visc_df) #, digits = c(1,50,50))
-
-#kable(visc_plot_data) #, digits = c(1,50,50))
-
-
 show(visc_plot1)
 
 
@@ -183,9 +177,6 @@ The third experiment recorded the flouresscence form the polymerizing Act G + Ac
 
 ```{r, echo = FALSE}
 
-Exp3_rotz <- read.csv("C:/Users/Izar Schärf/Desktop/MoBi/Semester_7/BPC-Praktikum/Actin versuch data/SPEXGruppe 6.td")
-
-# https://r4ds.had.co.nz/strings.html
 Exp3_clean <- Exp3_rotz[37:nrow(Exp3_rotz),]
 
 Exp3_sep_str <- as.numeric(unlist(strsplit(as.vector(Exp3_clean), split = c("\t"))),na.rm = TRUE)
@@ -203,6 +194,9 @@ Flou_plot1 <-ggplot(Exp3_data, aes(x = Time3, y = Flourescence3))+
 
 show(Flou_plot1)
 
+
+
+#Exporting Data as Excel Files
 #EXP 1
 write_xlsx(visc_plot_data,"C:\\Users\\Izar Schärf\\Desktop\\MoBi\\Semester_7\\BPC-Praktikum\\Actin versuch data\\visc_plot_data_exp1.xlsx")
 
@@ -222,12 +216,6 @@ write_xlsx(Exp3_data,"C:\\Users\\Izar Schärf\\Desktop\\MoBi\\Semester_7\\BPC-Pr
 
 
 ```
-
-## Discussion:
-
-As gathered in the first experiemnt, seen in figure 1, examining the relationship between time to polymerize and viscosity at a constant concentration of Actin G monomers in solution, the viscosity peaks at 50 min of polymerization time. The solution starts gaining viscosity at a linear pace from 20 min to 40 min at which point the rate of increase of viscosity by time to set decreases rapidly until the rate of viscosity gain by time is negative between the measurements at 50 min and 60 min. This suggests that there is a ciritcal concentration of seed actin polymers which will initiate a steady growth phase for the actin polymers, this corrolates with the viscosity because longer polymers induce higher viscosity. The drop in Viscosity at 60 mins time is would not agree with the standart rate of formation models for actin, however a drop in the amount of available ATP which is used in the polymerisation means that after a certain time the rate of formation will no longer be greater than the rate of dissociation.
-
-Regarding figure 2, the clear trend towards higher viscosity at higher actin concentrations can be seen. The curve increases almost as an exp function gathering here from that it is the number of interactions that increase in an exponential combination like way which results in small changes in concentration leading to large changes in viscosity.
 
 
 
